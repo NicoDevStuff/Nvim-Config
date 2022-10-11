@@ -14,8 +14,9 @@
   * [Nerd Font collection](https://github.com/ryanoasis/nerd-fonts)
   * Or use any font you want!
  * Individual dependencies for the language servers
-  * for example coc-python and jedi for the python programming language
+  * for example coc-python and jedi for the python programming language,
   * clangd for c/c++
+  * and so on.
 
 ### Installation:
 * Install Neovim 7 or newer
@@ -39,5 +40,27 @@ cd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
 yarn install
 yarn build
 ```
+### Now the config is completely installed and ready to use 🥳
+### Custom Keybindings:
+* Leader: Space Key
+* Leader + fb : Open Telescope file explorer/viewer
+* Leader + ff : Open [NvimTree](https://github.com/nvim-tree/nvim-tree.lua/)
+* m : move one buffer to the right in the [bufferline](https://github.com/akinsho/bufferline.nvim)
+* n : move one buffer to the left in the [bufferline](https://github.com/akinsho/bufferline.nvim)
+* Leader + m : move the current buffer to the right in the [bufferline](https://github.com/akinsho/bufferline.nvim)
+* Leader + n : move the current buffer to the left in the [bufferline](https://github.com/akinsho/bufferline.nvim)
+* Leader + tt : open the default neovim terminal
+* Ctrl + Space in insert mode : show autocompletion window when it doesnt show up
+
+### How to install new Plugins: 
+* Get the github link to the plugin, for example 'morhetz/gruvbox' for the gruvbox color scheme. (You can leave out the 'github.com/...')
+* Go into [lua/plugins/init.lua](https://github.com/NicoDevStuff/nvim-config/blob/main/lua/plugins/init.lua)
+* Add another line like this: use '{PLUGIN-URL}'
+* Then lastly restart neovim and run ``` :PackerSync ``` to sync the plugins
+* Optionally, you have to `
+```lua
+require('{PACKAGE-NAME}')
+```
+to use the plugin (for more information, RTFM!)
 
 ### Have fun!
