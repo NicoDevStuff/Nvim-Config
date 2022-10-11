@@ -1,23 +1,17 @@
 {
-  // Refresh on insert mode
   "diagnostic.refreshOnInsertMode": true,
   
-  // Python config
   "python.jediEnabled": true,
   "python.setInterpreter": "python3",
   "python.linting.enabled": true,
   
-  // Clangd setup
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.1/clangd_15.0.1/bin/clangd" ,
   "clangd.inlayHints.enable": false, 
 
-  // Set virtual Text to false
   "diagnostic.virtualText": false,
   
-  // Rust Config
   "rust-analyzer.inlayHints.enable": false,
   
-  // Language Server setup
   "languageserver": {
     "ccls": {
       "command": "ccls",
