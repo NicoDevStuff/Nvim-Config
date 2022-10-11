@@ -135,18 +135,6 @@ g.coc_global_extensions = {
   'coc-json',
 } 
 
--- -- NERDTree
--- -- Exit Vim if NERDTree is the only window remaining in the only tab.
--- vim.cmd([[
--- 	autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
--- ]])
-
--- -- If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
--- vim.cmd([[
--- 	autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
---     	\ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
--- ]])
-
 -- nvim-tree
 require("nvim-tree").setup {
 	auto_reload_on_write = true,
@@ -226,6 +214,7 @@ return require('packer').startup(function()
     	requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   	}
 	require('lualine').setup()
+	
 	-- File management --
 	use 'vifm/vifm.vim'
 	
@@ -243,7 +232,8 @@ return require('packer').startup(function()
 	
 	-- language server
 	use 'neoclide/coc.nvim'
-
+	use 'sheerun/vim-polyglot'
+	use 'rust-lang/rust.vim'
 	-- Tim Pope Plugins --
 	use 'tpope/vim-surround'
 
@@ -278,8 +268,22 @@ return require('packer').startup(function()
 	
 	use 'farmergreg/vim-lastplace'
 
+	use 'dstein64/vim-startuptime'
+
 	-- bufferline --
 	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 	require("bufferline").setup()
+
+	use {
+		"AmeerTaweel/todo.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("todo").setup {
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			}
+		end
+	}
 
 end)

@@ -8,7 +8,7 @@
   "python.linting.enabled": true,
   
   // Clangd setup
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd" ,
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.1/clangd_15.0.1/bin/clangd" ,
   "clangd.inlayHints.enable": false, 
 
   // Set virtual Text to false
