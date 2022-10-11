@@ -1,5 +1,16 @@
 # My Neovim config
 
+<img title="Neovim config" alt="Alt text" src="/screenshots/Screenshot-Collage.png">
+
+### Features:
+* Preconfigured [Autocompletion Engine](https://github.com/neoclide/coc.nvim)
+* Nice visuals 👀
+* Easy install 😯
+* Extensible 🤔
+* Fast 🚀 (current startup time is only 57.0 milliseconds!)
+* Lightweight 🤩
+* No Vim Script! 🥳
+
 ### Requirements:
 * [Neovim 7.0 or newer](https://neovim.io/)
 * [Nvim Packer](https://github.com/wbthomason/packer.nvim)
@@ -8,6 +19,7 @@
 * [Npm](https://www.npmjs.com/)
 * [Yarn](https://www.npmjs.com/package/yarn)
 * Git
+
 #### Optionally: 
 * A Nerd Font for your terminal
   * [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
@@ -41,6 +53,7 @@ yarn install
 yarn build
 ```
 ### Now the config is completely installed and ready to use 🥳
+
 ### Custom Keybindings:
 * Leader: Space Key
 * Leader + fb : Open Telescope file explorer/viewer
@@ -57,10 +70,10 @@ yarn build
 * Go into [lua/plugins/init.lua](https://github.com/NicoDevStuff/nvim-config/blob/main/lua/plugins/init.lua)
 * Add another line like this: use '{PLUGIN-URL}'
 * Then lastly restart neovim and run ``` :PackerSync ``` to sync the plugins
-* Optionally, you have to `
+* Optionally, you have to:
 ```lua
 require('{PACKAGE-NAME}')
 ```
-to use the plugin (for more information, RTFM!)
+* to use the plugin (for more information, RTFM!)
 
 ### Have fun!
