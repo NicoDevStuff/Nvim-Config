@@ -6,7 +6,6 @@
 -- ┗┛╋┗━┻┻━━┻━━┻━━━┻━━┛┗┛┗━━━┛┗━┻━━┛┗┛╋┗┛
 
 -- This is my neovim config rewritten in lua!! 
--- [Links] -> https://gitlab.com/dwt1/dotfiles/-/blob/master/.config/nvim/init.lua 
 
 require('plugins')
 
