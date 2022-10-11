@@ -3,7 +3,7 @@
 <img title="Neovim config" alt="Alt text" src="/screenshots/Screenshot-Collage.png">
 
 ### Features:
-* Preconfigured [Autocompletion Engine](https://github.com/neoclide/coc.nvim)
+* Preconfigured Neovim(no hassle required!)
 * Nice visuals 👀
 * Easy install 😯
 * Extensible 🤔
@@ -31,13 +31,13 @@
   * and so on.
 
 ### Installation:
-* Install Neovim 7 or newer
-* Get packer:
+* Install [Neovim 7](https://neovim.io/) or newer
+* Get [packer](https://github.com/wbthomason/packer.nvim):
 ``` bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-* Get the config:
+* Clone the config:
 ``` bash
 git clone https://github.com/NicoDevStuff/nvim.git ~/.config/nvim/
 ```
@@ -52,7 +52,7 @@ cd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
 yarn install
 yarn build
 ```
-### Now the config is completely installed and ready to use 🥳
+### Now the config is completely installed and ready to use! 🥳
 
 ### Custom Keybindings:
 * Leader: Space Key
