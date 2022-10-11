@@ -33,7 +33,7 @@ git clone https://github.com/NicoDevStuff/nvim.git ~/.config/nvim/
 ```bash
 nvim -c PackerSync
 ```
-* Build autocompletion Engine -> https://github.com/neoclide/coc.nvim
+* Build the [Autocompletion Engine](https://github.com/neoclide/coc.nvim)
 ```bash
 cd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
 yarn install
