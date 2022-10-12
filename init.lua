@@ -124,7 +124,7 @@ db.custom_center = {
 	shortcut = 'SPC h t'},
 }
 
-db.session_directory = "/home/nico/.config/nvim/session"
+db.session_directory = "~/.config/nvim/session"
 db.custom_footer = { 'Path:', script_path() }
 
 -- coc.nvim
