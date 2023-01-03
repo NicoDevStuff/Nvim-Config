@@ -7,7 +7,7 @@
 * Nice visuals 👀
 * Easy install 😯
 * Extensible 🤔
-* Fast 🚀 (current startup time is only 57.0 milliseconds!)
+* Fast 🚀
 * Lightweight 🤩
 * No Vim Script! 🥳
 
