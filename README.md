@@ -17,9 +17,6 @@
 * [Lua](https://www.lua.org/)
 * [Python 3](https://www.python.org/)
 * [Pip 3](https://www.python.org/)
-* [NodeJS 16 or newer](https://nodejs.org/en/)
-* [Npm](https://www.npmjs.com/)
-* [Yarn](https://www.npmjs.com/package/yarn)
 * Git
 
 #### Optionally: 
@@ -28,9 +25,6 @@
   * [Nerd Font collection](https://github.com/ryanoasis/nerd-fonts)
   * Or use any font you want!
  * Individual dependencies for the language servers
-  * for example coc-python and jedi for the python programming language,
-  * clangd for c/c++
-  * and so on.
 
 ### Installation:
 * Install [Neovim 7](https://neovim.io/) or newer
@@ -48,18 +42,16 @@ git clone https://github.com/NicoDevStuff/nvim.git ~/.config/nvim/
 ```bash
 nvim -c PackerSync
 ```
-* Build the [Autocompletion Engine](https://github.com/neoclide/coc.nvim)
-```bash
-cd ~/.local/share/nvim/site/pack/packer/start/coc.nvim
-yarn install
-yarn build
-```
 * Install the Python dependencies
 ```bash
 pip3 install pynvim
 ```
 ### Now the config is completely installed and ready to use! 🥳
 
+### How to add a language
+```
+: LspInstall {language-server}
+```
 ### Custom Keybindings:
 * Leader: Space Key
 * Leader + fb : Open Telescope file explorer/viewer
