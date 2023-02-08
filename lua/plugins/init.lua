@@ -2,7 +2,8 @@ return require('packer').startup(function()
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
-	use 'glepnir/dashboard-nvim'
+	use 'mhinz/vim-startify'
+
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		requires = { {'nvim-lua/plenary.nvim'} }
@@ -42,14 +43,12 @@ return require('packer').startup(function()
     	requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   	}
 	require('lualine').setup()
-	
 	use 'vifm/vifm.vim'
 	use {
 		'nvim-tree/nvim-tree.lua',
 		requires = {
     		'nvim-tree/nvim-web-devicons', -- optional, for file icons
   		},
-  		
 		tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
 	use 'tiagofumo/vim-nerdtree-syntax-highlight'

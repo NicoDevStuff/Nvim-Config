@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
-  ["dashboard-nvim"] = {
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
-    url = "https://github.com/glepnir/dashboard-nvim"
-  },
   ["goyo.vim"] = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/goyo.vim",
@@ -176,7 +171,7 @@ _G.packer_plugins = {
     url = "https://github.com/kovetskiy/sxhkd-vim"
   },
   ["telescope-file-browser.nvim"] = {
-    config = { "\27LJ\2\nˆ\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\2\17hijack_netrw\2\ntheme\fgruvbox\nsetup\14telescope\frequire\0" },
+    config = { "\27LJ\2\nˆ\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\2\ntheme\fgruvbox\17hijack_netrw\2\nsetup\14telescope\frequire\0" },
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
@@ -252,6 +247,11 @@ _G.packer_plugins = {
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/vim-rainbow",
     url = "https://github.com/frazrepo/vim-rainbow"
   },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/nico/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
+  },
   ["vim-startuptime"] = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/vim-startuptime",
@@ -275,6 +275,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: telescope-file-browser.nvim
+time([[Config for telescope-file-browser.nvim]], true)
+try_loadstring("\27LJ\2\nˆ\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\2\ntheme\fgruvbox\17hijack_netrw\2\nsetup\14telescope\frequire\0", "config", "telescope-file-browser.nvim")
+time([[Config for telescope-file-browser.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 try_loadstring("\27LJ\2\n¼\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\21ensure_installed\1\2\0\0\borg\14highlight\1\0\0&additional_vim_regex_highlighting\1\2\0\0\borg\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
@@ -283,10 +287,6 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for todo.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ttodo\frequire\0", "config", "todo.nvim")
 time([[Config for todo.nvim]], false)
--- Config for: telescope-file-browser.nvim
-time([[Config for telescope-file-browser.nvim]], true)
-try_loadstring("\27LJ\2\nˆ\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\2\17hijack_netrw\2\ntheme\fgruvbox\nsetup\14telescope\frequire\0", "config", "telescope-file-browser.nvim")
-time([[Config for telescope-file-browser.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
