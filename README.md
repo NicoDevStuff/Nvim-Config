@@ -42,6 +42,8 @@ git clone https://github.com/NicoDevStuff/nvim.git ~/.config/nvim/
 ```bash
 nvim -c PackerSync
 ```
+NOTE: This wil cause some errors, which are fine. Just keep running this command until there are no errors! 
+
 * Install the Python dependencies
 ```bash
 pip3 install pynvim
