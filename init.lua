@@ -6,7 +6,6 @@
 -- ┗┛╋┗━┻┻━━┻━━┻━━━┻━━┛┗┛┗━━━┛┗━┻━━┛┗┛╋┗┛
 
 -- This is my neovim config rewritten in lua!!
-
 require('plugins')
 require('setup')
 require('keybinds')
