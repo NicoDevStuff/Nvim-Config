@@ -13,7 +13,7 @@ return require('packer').startup(function()
 		require("telescope").setup {
 		  extensions = {
 			file_browser = {
-			  theme = "gruvbox",
+			  -- theme = "gruvbox",
 			  -- disables netrw and use telescope-file-browser in its place
 			  hijack_netrw = true,
 			},
@@ -32,7 +32,7 @@ return require('packer').startup(function()
 			   enable = true,
 			   additional_vim_regex_highlighting = {'org'}, -- Required for spellcheck, some LaTex highlights and code block highlights that do not have ts grammar
 			   },
-			ensure_installed = {'org', 'c', 'c++', 'rust'}, -- Or run :TSUpdate org
+			ensure_installed = {'org', 'c', 'cpp', 'rust', 'lua'}, -- Or run :TSUpdate org
 			}
 	   end
 	}
@@ -63,7 +63,11 @@ return require('packer').startup(function()
 	use 'junegunn/goyo.vim'
 	use 'junegunn/limelight.vim'
 	use 'junegunn/vim-emoji'
+
 	use 'morhetz/gruvbox'
+	use 'sainnhe/gruvbox-material'
+	use 'catppuccin/nvim'
+
 	use 'frazrepo/vim-rainbow'
 	use 'rcarriga/nvim-notify'
 	use 'airblade/vim-gitgutter'

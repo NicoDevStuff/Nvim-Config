@@ -23,8 +23,13 @@ o.clipboard = 'unnamedplus'
 o.splitright = true
 o.splitbelow = true
 
+--Lua:
 -- set colorscheme
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[
+	let g:gruvbox_material_background = 'medium'
+    let g:gruvbox_material_better_performance = 1
+	colorscheme gruvbox-material
+]])
 
 g.mapleader = ' '
 
