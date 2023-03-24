@@ -2,7 +2,10 @@ return require('packer').startup(function()
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
-	use 'mhinz/vim-startify'
+	use {
+        'goolord/alpha-nvim',
+        config = function() require('plugins.alpha') end,
+    }
 
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -56,7 +59,6 @@ return require('packer').startup(function()
 	use 'sheerun/vim-polyglot'
 	use 'rust-lang/rust.vim'
 	use 'tpope/vim-surround'
-	use 'PotatoesMaster/i3-vim-syntax'
 	use 'kovetskiy/sxhkd-vim'
 	use 'vim-python/python-syntax'
 	use 'ap/vim-css-color'
