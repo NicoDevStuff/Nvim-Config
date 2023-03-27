@@ -37,12 +37,7 @@ local on_attach = function(_, bufnr)
 end
 
 local servers = {
-  -- lua_language_server = {
-  --   Lua = {
-  --     workspace = { checkThirdParty = false },
-  --     telemetry = { enable = false },
-  --   },
-  -- },
+
 }
 
 require('neodev').setup()
