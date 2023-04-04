@@ -53,7 +53,6 @@ return require('packer').startup(function()
 	   end
 	}
 
-	use 'vimwiki/vimwiki'
 	use 'jreybert/vimagit'
 	use { 'nvim-lualine/lualine.nvim',
     	requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -70,10 +69,6 @@ return require('packer').startup(function()
 	use 'tiagofumo/vim-nerdtree-syntax-highlight'
 	use 'ryanoasis/vim-devicons'
 	use 'sheerun/vim-polyglot'
-	use 'rust-lang/rust.vim'
-	use 'tpope/vim-surround'
-	use 'kovetskiy/sxhkd-vim'
-	use 'vim-python/python-syntax'
 	use 'ap/vim-css-color'
 	use 'junegunn/goyo.vim'
 	use 'junegunn/limelight.vim'
@@ -83,14 +78,12 @@ return require('packer').startup(function()
 	use 'sainnhe/gruvbox-material'
 	use 'catppuccin/nvim'
 
-	use 'frazrepo/vim-rainbow'
 	use 'rcarriga/nvim-notify'
 	use 'airblade/vim-gitgutter'
 	use 'itchyny/vim-gitbranch'
 	use 'tpope/vim-commentary'
 	use 'kyazdani42/nvim-web-devicons'
 	use 'farmergreg/vim-lastplace'
-	use 'dstein64/vim-startuptime'
 	use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 	require("bufferline").setup()
 	use {
@@ -104,7 +97,7 @@ return require('packer').startup(function()
 			}
 		end
 	}
-
+	-- org
 	use {
 	  "folke/zen-mode.nvim",
 	  config = function()
@@ -141,7 +134,6 @@ return require('packer').startup(function()
 			'hrsh7th/nvim-cmp',
 			requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
 	  }
-
 	  if packer_bootstrap then
          require('packer').sync()
 	  end
