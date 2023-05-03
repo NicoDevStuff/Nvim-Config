@@ -34,14 +34,6 @@ map('v', '<Down>', '')
 -- terminal
 map('n', '<leader>tt', '<cmd> terminal <CR>')
 
--- legacy 
--- vim.cmd([[
--- inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
---                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
--- 							  ]])
-
--- vim.cmd([[autocmd CursorHold * silent call CocActionAsync('highlight')]])
--- vim.cmd([[inoremap <silent><expr> <c-space> coc#refresh()]])
 vim.cmd([[
 	function! WinMove(key)
 		let t:curwin = winnr()

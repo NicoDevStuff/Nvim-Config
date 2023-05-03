@@ -37,7 +37,28 @@ local on_attach = function(_, bufnr)
 end
 
 local servers = {
+  lua_ls = {
+    workspace = {
+      library = {
+        ['/usr/share/nvim/runtime/lua'] = true,
+        ['/usr/share/nvim/runtime/lua/lsp'] = true,
+        ['/usr/share/awesome/lib'] = true
+      }
+    };
 
+    diagnostics = {
+      enable = true;
+      globals = {
+      -- VIM
+      "vim",
+      "use", -- Packer use keyword
+      -- AwesomeWM
+      "awesome",
+      "client",
+      "root"
+      };
+    };
+  }
 }
 
 require('neodev').setup()
@@ -112,5 +133,6 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'cmp_tabnine' },
   },
 }

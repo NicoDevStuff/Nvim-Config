@@ -130,11 +130,14 @@ return require('packer').startup(function()
 		},
 	  }
 
-	  use { -- Autocompletion
-			'hrsh7th/nvim-cmp',
-			requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
-	  }
-	  if packer_bootstrap then
-         require('packer').sync()
-	  end
+	use { -- Autocompletion
+		'hrsh7th/nvim-cmp',
+		requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
+	}
+
+	use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+
+	if packer_bootstrap then
+	 require('packer').sync()
+	end
 end)
