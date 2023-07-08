@@ -90,30 +90,30 @@ _G.packer_plugins = {
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["cmake-tools.nvim"] = {
+    loaded = true,
+    path = "/home/nico/.local/share/nvim/site/pack/packer/start/cmake-tools.nvim",
+    url = "https://github.com/Civitasv/cmake-tools.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-tabnine"] = {
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
-    url = "https://github.com/tzachar/cmp-tabnine"
   },
   cmp_luasnip = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  everforest = {
+    loaded = true,
+    path = "/home/nico/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["fidget.nvim"] = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
-  },
-  ["goyo.vim"] = {
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/goyo.vim",
-    url = "https://github.com/junegunn/goyo.vim"
   },
   gruvbox = {
     loaded = true,
@@ -124,11 +124,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
-  },
-  ["limelight.vim"] = {
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/limelight.vim",
-    url = "https://github.com/junegunn/limelight.vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -166,6 +161,11 @@ _G.packer_plugins = {
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -182,7 +182,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\nÀ\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\21ensure_installed\1\6\0\0\borg\6c\bcpp\trust\blua\14highlight\1\0\0&additional_vim_regex_highlighting\1\2\0\0\borg\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\nå\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ensure_installed\1\3\0\0\6c\blua\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -203,7 +203,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope-file-browser.nvim"] = {
-    config = { "\27LJ\2\nz\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\1\17hijack_netrw\2\nsetup\14telescope\frequire\0" },
+    config = { "\27LJ\2\nà\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\2\ntheme\fgruvbox\17hijack_netrw\2\nsetup\14telescope\frequire\0" },
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
@@ -218,11 +218,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
-  },
-  ["vifm.vim"] = {
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/vifm.vim",
-    url = "https://github.com/vifm/vifm.vim"
   },
   ["vim-commentary"] = {
     loaded = true,
@@ -259,50 +254,35 @@ _G.packer_plugins = {
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/vim-lastplace",
     url = "https://github.com/farmergreg/vim-lastplace"
   },
-  ["vim-nerdtree-syntax-highlight"] = {
+  ["vim-sxhkdrc"] = {
     loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight",
-    url = "https://github.com/tiagofumo/vim-nerdtree-syntax-highlight"
-  },
-  ["vim-polyglot"] = {
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/vim-polyglot",
-    url = "https://github.com/sheerun/vim-polyglot"
+    path = "/home/nico/.local/share/nvim/site/pack/packer/start/vim-sxhkdrc",
+    url = "https://github.com/baskerville/vim-sxhkdrc"
   },
   vimagit = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/vimagit",
     url = "https://github.com/jreybert/vimagit"
-  },
-  ["zen-mode.nvim"] = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0" },
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
-    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
--- Config for: telescope-file-browser.nvim
-time([[Config for telescope-file-browser.nvim]], true)
-try_loadstring("\27LJ\2\nz\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\1\17hijack_netrw\2\nsetup\14telescope\frequire\0", "config", "telescope-file-browser.nvim")
-time([[Config for telescope-file-browser.nvim]], false)
--- Config for: zen-mode.nvim
-time([[Config for zen-mode.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
-time([[Config for zen-mode.nvim]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18plugins.alpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\nÀ\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\21ensure_installed\1\6\0\0\borg\6c\bcpp\trust\blua\14highlight\1\0\0&additional_vim_regex_highlighting\1\2\0\0\borg\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+try_loadstring("\27LJ\2\nå\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ensure_installed\1\3\0\0\6c\blua\14highlight\1\0\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
+-- Config for: telescope-file-browser.nvim
+time([[Config for telescope-file-browser.nvim]], true)
+try_loadstring("\27LJ\2\nà\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\15extensions\1\0\0\17file_browser\1\0\0\1\0\2\ntheme\fgruvbox\17hijack_netrw\2\nsetup\14telescope\frequire\0", "config", "telescope-file-browser.nvim")
+time([[Config for telescope-file-browser.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")

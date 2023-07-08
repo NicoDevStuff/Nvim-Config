@@ -6,13 +6,15 @@ local builtin = require('telescope.builtin')
 
 map('n', '<leader>fb', builtin.find_files)
 map('n', '<leader>ff' , '<CMD>NvimTreeOpen<CR>')
-
 -- vim bufferline scroll through the tabs
 map('n', 'm', '<cmd> BufferLineCycleNext <CR>')
 map('n', 'n', '<cmd> BufferLineCyclePrev <CR>')
 map('n', '<leader>m', '<cmd> BufferLineMoveNext <CR>')
 map('n', '<leader>n', '<cmd> BufferLineMovePrev <CR>')
 
+-- cmake 
+map('n', '<F8>', '<cmd> CMakeRun <CR>')
+map('n', '<F7>', '<cmd> CMakeSelectBuildType <CR>')
 -- set normal mode in every window(also the terminal)
 vim.cmd([[
 tnoremap <Esc> <C-\><C-n>:stopinsert<CR>

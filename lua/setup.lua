@@ -22,9 +22,12 @@ o.compatible = false
 o.clipboard = 'unnamedplus'
 o.splitright = true
 o.splitbelow = true
+o.shell = "/usr/bin/fish"
 
 --Lua:
 -- set colorscheme
+--
+
 vim.cmd([[
 	let g:gruvbox_material_background = 'medium'
     let g:gruvbox_material_better_performance = 1
@@ -44,22 +47,6 @@ require("nvim-tree").setup {
 	},
 
 }
-
-local tabnine = require('cmp_tabnine.config')
-
-tabnine:setup({
-	max_lines = 1000,
-	max_num_results = 20,
-	sort = true,
-	run_on_every_keystroke = true,
-	snippet_placeholder = '🚀',
-	ignored_file_types = {
-		-- default is not to ignore
-		-- uncomment to ignore in lua:
-		-- lua = true
-	},
-	show_prediction_strength = false
-})
 
 -- notify
 vim.notify = require("notify")
