@@ -102,11 +102,16 @@ return require('packer').startup(function()
 			},
 			ensure_installed = {
 				'c',
-				'lua'
+				'lua',
+				'zig'
 			},
 		}
 		end
 	}
+
+	use 'alaviss/nim.nvim'
+	use 'RaafatTurki/hex.nvim'
+	require 'hex'.setup()
 	--
 	-- git
 	use 'jreybert/vimagit'

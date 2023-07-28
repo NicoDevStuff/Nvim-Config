@@ -23,6 +23,7 @@ o.clipboard = 'unnamedplus'
 o.splitright = true
 o.splitbelow = true
 o.shell = "/usr/bin/fish"
+o.foldenable = false
 
 --Lua:
 -- set colorscheme
