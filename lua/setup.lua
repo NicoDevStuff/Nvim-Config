@@ -22,12 +22,10 @@ o.compatible = false
 o.clipboard = 'unnamedplus'
 o.splitright = true
 o.splitbelow = true
-o.shell = "/usr/bin/fish"
 o.foldenable = false
 
 --Lua:
 -- set colorscheme
---
 
 vim.cmd([[
 	let g:gruvbox_material_background = 'medium'
