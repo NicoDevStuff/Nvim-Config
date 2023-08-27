@@ -131,6 +131,7 @@ return require('packer').startup(function()
 	use 'sainnhe/gruvbox-material'
 	use 'sainnhe/everforest'
 	use 'catppuccin/nvim'
+	use 'joshdick/onedark.vim'
 
 	use 'ap/vim-css-color'
 	use 'kyazdani42/nvim-web-devicons'
