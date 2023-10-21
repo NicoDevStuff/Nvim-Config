@@ -103,7 +103,6 @@ return require('packer').startup(function()
 			ensure_installed = {
 				'c',
 				'lua',
-				'zig'
 			},
 		}
 		end
@@ -126,6 +125,9 @@ return require('packer').startup(function()
 			'mfussenegger/nvim-dap'
 		}
 	}
+
+	use 'igankevich/mesonic'
+
 	-- themes and other style stuff
 	use 'morhetz/gruvbox'
 	use 'sainnhe/gruvbox-material'
@@ -148,13 +150,14 @@ return require('packer').startup(function()
 			opt = true
 		}
   	}
-	require('lualine').setup()
-	use {
-		'akinsho/bufferline.nvim',
-		tag = "v2.*",
-		requires = 'kyazdani42/nvim-web-devicons'
-	}
-	require("bufferline").setup()
+
+
+	-- use {
+	-- 	'akinsho/bufferline.nvim',
+	-- 	tag = "v2.*",
+	-- 	requires = 'kyazdani42/nvim-web-devicons'
+	-- }
+	-- require("bufferline").setup()
 	--
 
 	-- quality of life features

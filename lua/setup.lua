@@ -47,6 +47,8 @@ require("nvim-tree").setup {
 
 }
 
+require("plugins.lualine")
+
 -- notify
 vim.notify = require("notify")
 
