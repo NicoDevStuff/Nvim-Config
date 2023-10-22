@@ -24,9 +24,6 @@ o.splitright = true
 o.splitbelow = true
 o.foldenable = false
 
---Lua:
--- set colorscheme
-
 vim.cmd([[
 	let g:gruvbox_material_background = 'medium'
     let g:gruvbox_material_better_performance = 1
@@ -48,6 +45,18 @@ require("nvim-tree").setup {
 }
 
 require("plugins.lualine")
+
+require("telescope").setup {
+	extensions = {
+		file_browser = {
+			theme = "gruvbox",
+			-- disables netrw and use telescope-file-browser in its place
+			hijack_netrw = true,
+		},
+	},
+}
+require("telescope").load_extension "file_browser"
+
 
 -- notify
 vim.notify = require("notify")

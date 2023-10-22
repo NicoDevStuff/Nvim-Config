@@ -30,25 +30,14 @@ return require('packer').startup(function()
 	--
 	-- file stuff
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.0',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		'nvim-telescope/telescope.nvim',
+		requires = { {'nvim-lua/plenary.nvim'},
+					{ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },}
 	}
 
 	use {
 		"nvim-telescope/telescope-file-browser.nvim",
-		config = function()
-		require("telescope").setup {
-		  extensions = {
-			file_browser = {
-			  theme = "gruvbox",
-			  -- disables netrw and use telescope-file-browser in its place
-			  hijack_netrw = true,
-			},
-		  },
-		}
-		end
 	}
-	require("telescope").load_extension "file_browser"
 
 	use {
 		'nvim-tree/nvim-tree.lua',
