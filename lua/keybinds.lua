@@ -6,6 +6,12 @@ local builtin = require('telescope.builtin')
 map('n', '<leader>ff', builtin.find_files)
 map('n', '<leader>fb' , builtin.buffers)
 map('n', '<leader>fd' , '<CMD>NvimTreeOpen<CR>')
+-- bufferline
+map('n', '<leader>.', '<cmd> BufferLineCycleNext <CR>')
+map('n', '<leader>,', '<cmd> BufferLineCyclePrev <CR>')
+map('n', '<C-.>', '<cmd> BufferLineMoveNext <CR>')
+map('n', '<C-,>', '<cmd> BufferLineMovePrev <CR>')
+map('n', '<leader>bc', ':bd! <CR>')
 
 -- cmake 
 map('n', '<F8>', '<cmd> CMakeRun <CR>')

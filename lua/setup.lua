@@ -12,7 +12,6 @@ o.shiftwidth = 4
 o.smarttab = true
 o.autoindent = true
 o.smartindent = true
-o.wrap = false
 o.encoding = "UTF-8"
 o.visualbell = true
 o.updatetime = 300
@@ -23,11 +22,18 @@ o.clipboard = 'unnamedplus'
 o.splitright = true
 o.splitbelow = true
 o.foldenable = false
+o.nowrap = true
 
+-- Gruvbox
 vim.cmd([[
+	set background=dark
 	let g:gruvbox_material_background = 'medium'
     let g:gruvbox_material_better_performance = 1
 	colorscheme gruvbox-material
+]])
+
+vim.cmd([[
+	set nowrap
 ]])
 
 g.mapleader = ' '

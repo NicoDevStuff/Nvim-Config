@@ -141,13 +141,13 @@ return require('packer').startup(function()
   	}
 
 
-	-- use {
-	-- 	'akinsho/bufferline.nvim',
-	-- 	tag = "v2.*",
-	-- 	requires = 'kyazdani42/nvim-web-devicons'
-	-- }
-	-- require("bufferline").setup()
-	--
+	 use {
+	 	'akinsho/bufferline.nvim',
+	 	tag = "v2.*",
+	 	requires = 'kyazdani42/nvim-web-devicons'
+	 }
+	 require("bufferline").setup()
+
 
 	-- quality of life features
 	use 'tpope/vim-commentary'
