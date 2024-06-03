@@ -6,21 +6,6 @@ local builtin = require('telescope.builtin')
 map('n', '<leader>ff', builtin.find_files)
 map('n', '<leader>fb' , builtin.buffers)
 map('n', '<leader>fd' , '<CMD>NvimTreeOpen<CR>')
--- bufferline
-map('n', '<leader>.', '<cmd> BufferLineCycleNext <CR>')
-map('n', '<leader>,', '<cmd> BufferLineCyclePrev <CR>')
-map('n', '<C-.>', '<cmd> BufferLineMoveNext <CR>')
-map('n', '<C-,>', '<cmd> BufferLineMovePrev <CR>')
-map('n', '<leader>bc', ':bd! <CR>')
-
--- cmake 
-map('n', '<F8>', '<cmd> CMakeRun <CR>')
-map('n', '<F7>', '<cmd> CMakeSelectBuildType <CR>')
-
--- set normal mode in every window(also the terminal)
-vim.cmd([[
-	tnoremap <Esc> <C-\><C-n>:stopinsert<CR>
-]])
 
 -- no more arrow keys for you
 map('n', '<Left>', '')
@@ -35,6 +20,25 @@ map('v', '<Left>', '')
 map('v', '<Right>', '')
 map('v', '<Up>', '')
 map('v', '<Down>', '')
+
+-- bufferline
+map('n', '<Right>', '<cmd> BufferLineCycleNext <CR>')
+map('n', '<Left>', '<cmd> BufferLineCyclePrev <CR>')
+map('n', '<Up>', '<cmd> BufferLineMoveNext <CR>')
+map('n', '<Down>', '<cmd> BufferLineMovePrev <CR>')
+map('n', '<leader>bc', ':bd! <CR>')
+
+-- cmake 
+map('n', '<C-d>', '<cmd> CMake build_and_run <CR>')
+map('n', '<C-f>', '<cmd> CMake select_target <CR>')
+
+-- set normal mode in every window(also the terminal)
+vim.cmd([[
+	tnoremap <Esc> <C-\><C-n>:stopinsert<CR>
+]])
+
+
+map('n', '#', '')
 
 -- terminal
 map('n', '<leader>tt', '<cmd> terminal <CR>')

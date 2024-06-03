@@ -107,12 +107,16 @@ return require('packer').startup(function()
 	use 'itchyny/vim-gitbranch'
 
 	-- cmake
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+		require("toggleterm").setup()
+	end}
+
 	use {
-		'Civitasv/cmake-tools.nvim',
+		'Shatur/neovim-cmake',
 		requires = {
 			'nvim-lua/plenary.nvim',
-			'mfussenegger/nvim-dap'
-		}
+			'mfussenegger/nvim-dap',
+		},
 	}
 
 	use 'igankevich/mesonic'
@@ -120,9 +124,7 @@ return require('packer').startup(function()
 	-- themes and other style stuff
 	use 'morhetz/gruvbox'
 	use 'sainnhe/gruvbox-material'
-	use 'sainnhe/everforest'
-	use 'catppuccin/nvim'
-	use 'joshdick/onedark.vim'
+	use 'RRethy/base16-nvim'
 
 	use 'ap/vim-css-color'
 	use 'kyazdani42/nvim-web-devicons'
@@ -166,6 +168,14 @@ return require('packer').startup(function()
 		"windwp/nvim-autopairs",
     	config = function() require("nvim-autopairs").setup {} end
 	}
+
+	use({
+	  "aurum77/live-server.nvim",
+		run = function()
+		  require"live_server.util".install()
+		end,
+		cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+	  })
 
 	use 'baskerville/vim-sxhkdrc'
 	if packer_bootstrap then

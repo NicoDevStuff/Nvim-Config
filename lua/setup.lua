@@ -1,3 +1,10 @@
+vim.cmd([[
+  augroup setup_user_config
+    autocmd!
+    autocmd BufWritePost setup.lua source <afile>
+  augroup end
+]])
+
 local g   = vim.g
 local o   = vim.o
 local opt = vim.opt
@@ -22,7 +29,7 @@ o.clipboard = 'unnamedplus'
 o.splitright = true
 o.splitbelow = true
 o.foldenable = false
-o.nowrap = true
+-- o.nowrap = true
 
 -- Gruvbox
 vim.cmd([[

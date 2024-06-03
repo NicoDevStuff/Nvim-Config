@@ -136,8 +136,6 @@ cmp.setup {
   },
 }
 
-require("cmake_config")
-
 local configs = require 'lspconfig/configs'
 local util = require 'lspconfig/util'
 
