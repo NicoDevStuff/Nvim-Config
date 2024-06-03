@@ -90,11 +90,6 @@ _G.packer_plugins = {
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/base16-nvim",
     url = "https://github.com/RRethy/base16-nvim"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/home/nico/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -179,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-cokeline"] = {
+    loaded = true,
+    path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-cokeline",
+    url = "https://github.com/willothy/nvim-cokeline"
+  },
   ["nvim-dap"] = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-dap",
@@ -200,7 +200,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\n©\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ensure_installed\1\3\0\0\6c\blua\14highlight\1\0\2\14highlight\0\21ensure_installed\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\n©\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ensure_installed\1\3\0\0\6c\blua\14highlight\1\0\2\21ensure_installed\0\14highlight\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -219,6 +219,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nico/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["resession.nvim"] = {
+    loaded = true,
+    path = "/home/nico/.local/share/nvim/site/pack/packer/start/resession.nvim",
+    url = "https://github.com/stevearc/resession.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
@@ -295,36 +300,29 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
+time([[Config for toggleterm.nvim]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\n-\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\18plugins.alpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\n©\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ensure_installed\1\3\0\0\6c\blua\14highlight\1\0\2\14highlight\0\21ensure_installed\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+try_loadstring("\27LJ\2\n©\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ensure_installed\1\3\0\0\6c\blua\14highlight\1\0\2\21ensure_installed\0\14highlight\0\1\0\1\venable\2\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
-time([[Config for todo-comments.nvim]], false)
--- Config for: toggleterm.nvim
-time([[Config for toggleterm.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
-time([[Config for toggleterm.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'LiveServerStop', function(cmdargs)
-          require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServerStop', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('LiveServerStop ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'LiveServer', function(cmdargs)
           require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServer', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -338,6 +336,13 @@ pcall(vim.api.nvim_create_user_command, 'LiveServerStart', function(cmdargs)
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('LiveServerStart ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'LiveServerStop', function(cmdargs)
+          require('packer.load')({'live-server.nvim'}, { cmd = 'LiveServerStop', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'live-server.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('LiveServerStop ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 

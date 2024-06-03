@@ -30,6 +30,8 @@ o.splitright = true
 o.splitbelow = true
 o.foldenable = false
 -- o.nowrap = true
+--
+require("plugins.cokeline")
 
 -- Gruvbox
 vim.cmd([[

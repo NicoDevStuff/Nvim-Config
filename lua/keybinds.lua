@@ -22,11 +22,16 @@ map('v', '<Up>', '')
 map('v', '<Down>', '')
 
 -- bufferline
-map('n', '<Right>', '<cmd> BufferLineCycleNext <CR>')
-map('n', '<Left>', '<cmd> BufferLineCyclePrev <CR>')
-map('n', '<Up>', '<cmd> BufferLineMoveNext <CR>')
-map('n', '<Down>', '<cmd> BufferLineMovePrev <CR>')
-map('n', '<leader>bc', ':bd! <CR>')
+-- map('n', '<Right>', '<cmd> BufferLineCycleNext <CR>')
+-- map('n', '<Up>', '<cmd> BufferLineMoveNext <CR>')
+-- map('n', '<Down>', '<cmd> BufferLineMovePrev <CR>')
+-- map('n', '<leader>bc', ':bd! <CR>')
+
+map('n', '<Left>',   '<Plug>(cokeline-focus-prev)',  { silent = true })
+map('n', '<Right>',     '<Plug>(cokeline-focus-next)',  { silent = true })
+map('n', '<Up>', '<Plug>(cokeline-switch-prev)', { silent = true })
+map('n', '<Down>', '<Plug>(cokeline-switch-next)', { silent = true })
+
 
 -- cmake 
 map('n', '<C-d>', '<cmd> CMake build_and_run <CR>')

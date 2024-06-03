@@ -143,12 +143,14 @@ return require('packer').startup(function()
   	}
 
 
-	 use {
-	 	'akinsho/bufferline.nvim',
-	 	tag = "v2.*",
-	 	requires = 'kyazdani42/nvim-web-devicons'
-	 }
-	 require("bufferline").setup()
+	use {
+		"willothy/nvim-cokeline",
+	  	requires = {
+			"nvim-lua/plenary.nvim",        -- Required for v0.4.0+
+			"nvim-tree/nvim-web-devicons", -- If you want devicons
+			"stevearc/resession.nvim"       -- Optional, for persistent history
+		},
+	}
 
 
 	-- quality of life features
