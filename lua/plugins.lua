@@ -27,7 +27,7 @@ return require('packer').startup(function()
         'goolord/alpha-nvim',
         config = function() require('plugins.alpha') end,
     }
-	--
+
 	-- file stuff
 	use {
 		'nvim-telescope/telescope.nvim',
@@ -56,6 +56,7 @@ return require('packer').startup(function()
 		"j-hui/fidget.nvim",
 		tag = "legacy"
 	}
+
 	use {
 		'neovim/nvim-lspconfig',
 		requires = {
@@ -98,8 +99,12 @@ return require('packer').startup(function()
 	}
 
 	use 'alaviss/nim.nvim'
-	use 'RaafatTurki/hex.nvim'
-	require 'hex'.setup()
+	use {
+		'RaafatTurki/hex.nvim',
+		startup = function ()
+			require 'hex'.setup()
+		end
+	}
 	--
 	-- git
 	use 'jreybert/vimagit'
@@ -112,11 +117,12 @@ return require('packer').startup(function()
 	end}
 
 	use {
-		'Shatur/neovim-cmake',
+		'Civitasv/cmake-tools.nvim',
 		requires = {
 			'nvim-lua/plenary.nvim',
 			'mfussenegger/nvim-dap',
 		},
+		config = function () require("plugins.cmake") end
 	}
 
 	use 'igankevich/mesonic'

@@ -29,8 +29,8 @@ map('n', '<Up>', '<Plug>(cokeline-switch-next)', { silent = true })
 
 
 -- cmake 
-map('n', '<C-d>', '<cmd> CMake build_and_run <CR>')
-map('n', '<C-f>', '<cmd> CMake select_target <CR>')
+map('n', '<C-d>', '<cmd> CMakeRun <CR>')
+map('n', '<C-f>', '<cmd> CMakeSelectBuildType <CR>')
 
 -- set normal mode in every window(also the terminal)
 vim.cmd([[
